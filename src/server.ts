@@ -8,3 +8,6 @@ app
   .then(() => {
     console.log(`HTTP server running: ${env.PORT}`)
   })
+  .catch((error) => {
+    console.error('Error while starting the server:', error)
+  })
